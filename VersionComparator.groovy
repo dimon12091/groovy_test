@@ -15,6 +15,7 @@ def f = ["1.0.2",
 "1.0RC1",
 "3.1"]
 
+@NonCPS
 def versionComparator = { a, b ->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
