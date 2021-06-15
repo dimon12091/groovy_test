@@ -1,3 +1,5 @@
+import org.codehaus.groovy.control.MultipleCompilationErrorsException
+
 @NonCPS
 List versions = [ '02.2.02.01', '02.2.02.02', '02.2.03.01']
 String mostRecentVersion = versions.sort {a, b ->
