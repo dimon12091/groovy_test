@@ -47,4 +47,4 @@ def versionComparator = { a, b ->
   return 0
 }
 
-f.sort(versionComparator)
+println(f.sort(versionComparator))
