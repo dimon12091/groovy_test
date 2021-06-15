@@ -24,6 +24,7 @@ def versionComparator = { a, b ->
   for (i in 0..<Math.max(a.size(), b.size())) {
     if (i == a.size()) {
       return b[i].isInteger() ? -1 : 1
+
     } else if (i == b.size()) {
       return a[i].isInteger() ? 1 : -1
     }
