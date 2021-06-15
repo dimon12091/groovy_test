@@ -1,5 +1,5 @@
 def versions = []
-def f = new File("./tags/mock-version-tags.txt")
+def f = new File('/tags/mock-version-tags.txt')
 f.eachLine { versions << it }
 
 def versionComparator = { a, b ->
