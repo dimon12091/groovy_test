@@ -19,7 +19,7 @@ bubbleSort(array)
 println(array)
 
 def list = ["3.6.4-alpine", "3.6.4", "3.6.4-beta"]
-def bubbleSort(list) {
+def bubbleSort1(list) {
   for(i=list.size()-1;i>1;i--){
    for(j=0;j<i;j++){
     def VALID_TOKENS = /._/
@@ -35,5 +35,5 @@ def bubbleSort(list) {
    }
   }
 }
-bubbleSort(list)
+bubbleSort1(list)
 println(list)
