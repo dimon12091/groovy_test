@@ -21,9 +21,9 @@ def bubbleSort(array) {
     c = array[j+1].tokenize(VALID_TOKENS)[2]
     println(array[j][0..2])
     println(array[j+1][0..2])
-    if(array[j][0..2]>=array[j+1][0..2] && b > c){
-     array.swap(j,j+1)
-    }
+//     if(array[j][0..2]>=array[j+1][0..2] && b > c){
+//      array.swap(j,j+1)
+//     }
    }
   }
 }
