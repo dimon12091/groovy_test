@@ -17,9 +17,9 @@ array = ["3.8.10","3.9.2","3.9.1","3.8.3","3.8.2","2.7.2","2.7.1","3.8.1","3.7.4
 
 println(array)
 
-List = ["<none>", "bash"]
-if (List[0] == "<none") {
-    println(List[0])
+list = ["<none>", "bash"]
+if (list[0] == "<none") {
+    println(list[0])
 }
 else (
     println("you are stupid")
