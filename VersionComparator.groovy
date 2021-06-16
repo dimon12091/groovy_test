@@ -5,7 +5,7 @@ array = ["3.8.10","3.9.2","3.9.1","3.8.3","3.8.2","2.7.2","2.7.1","3.8.1","3.7.4
     b = array[j].tokenize('.')[2]
     c = array[j+1].tokenize('.')[2]
     if (array[j] == "<none>") {
-        array.swap(array[j], -1)
+        array.swap(-1, 0)
     }
     if ((array[j][0..2] == array[j+1][0..2] && b > c) || (array[j][0..2] == array[j+1][0..2] && b < c)) {
         array.swap(j,j+1)
