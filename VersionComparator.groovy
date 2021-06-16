@@ -4,6 +4,7 @@ def f = ["1.0.12", "1.0.2", "0.1",
 
 for (x in f) {
     def VALID_TOKENS = /._/
+    println(x)
     x = x.tokenize(VALID_TOKENS)
     println(x)
 }
