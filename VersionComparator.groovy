@@ -20,7 +20,6 @@ for (x in array) {
 }
 
 def bubbleSort(array) {
-  println(array.size())
   for(i=array.size()-1;i>1;i--){
    for(j=0;j<i;j++){
     if(array[j]>array[j+1]){
@@ -29,7 +28,8 @@ def bubbleSort(array) {
    }
   }
 }
-
-
 bubbleSort(array)
+println(array)
+
+
 
