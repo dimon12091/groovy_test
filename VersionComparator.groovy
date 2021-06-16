@@ -7,6 +7,8 @@ def versionComparator = { a, b ->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
   b = b.tokenize(VALID_TOKENS)
+  println(a)
+  println(b)
 
   for (i in 0..<Math.max(a.size(), b.size())) {
     if (i == a.size()) {
