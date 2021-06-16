@@ -5,31 +5,16 @@ def bubbleSort(array) {
     def VALID_TOKENS = /._/
     b = array[j].tokenize(VALID_TOKENS)[2]
     c = array[j+1].tokenize(VALID_TOKENS)[2]
-    if(array[j]>array[j+1]){
+    if (array[j][0..2] == array[j+1][0..2] && b > c) {
         array.swap(j,j+1)
         continue
     }
-    if (array[j][0..2] == array[j+1][0..2] && b > c) {
+    if(array[j]>array[j+1]){
         array.swap(j,j+1)
     }
+
    }
   }
 }
 bubbleSort(array)
-println(array)
-
-def bubbleSort1(array) {
-  for(i=array.size()-1;i>1;i--){
-   for(j=0;j<i;j++){
-    def VALID_TOKENS = /._/
-    b = array[j].tokenize(VALID_TOKENS)[2]
-    c = array[j+1].tokenize(VALID_TOKENS)[2]
-    if(array[j]>array[j+1]){
-        array.swap(j,j+1)
-    }
-   }
-  }
-}
-
-bubbleSort1(array)
 println(array)
