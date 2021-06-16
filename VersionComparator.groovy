@@ -27,24 +27,3 @@ def bubbleSort(array) {
 }
 bubbleSort(array)
 println(array)
-
-
-
-def bubbleSort1(stay) {
-    for (int i = 0; i < stay.size(); i++) {
-        int min = array[i];
-        int minId = i;
-        for (int j = i+1; j < stay.size(); j++) {
-            if (stay[j] < min) {
-                min = stay[j];
-                minId = j;
-            }
-        }
-        // замена
-        int temp = stay[i];
-        stay[i] = min;
-        stay[minId] = temp;
-    }
-
-}
-bubbleSort1(array)
