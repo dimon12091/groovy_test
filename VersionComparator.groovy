@@ -31,10 +31,10 @@ println(array)
 
 
 def bubbleSort1(stay) {
-    for (int i = 0; i < stay.length; i++) {
+    for (int i = 0; i < stay.size(); i++) {
         int min = array[i];
         int minId = i;
-        for (int j = i+1; j < stay.length; j++) {
+        for (int j = i+1; j < stay.size(); j++) {
             if (stay[j] < min) {
                 min = stay[j];
                 minId = j;
