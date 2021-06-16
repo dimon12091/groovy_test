@@ -19,7 +19,6 @@ def versionComparator = { a, b ->
     } else if (i == b.size()) {
       return a[i].isInteger() ? 1 : -1
     }
-    println(i)
     if (a[i].isInteger() && b[i].isInteger()) {
       int c = (a[i] as int) <=> (b[i] as int)
       if (c != 0) {
@@ -41,4 +40,4 @@ def versionComparator = { a, b ->
   return 0
 }
 
-println(f.sort(versionComparator))
+f.sort(versionComparator)
