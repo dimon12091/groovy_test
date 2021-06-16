@@ -18,23 +18,3 @@ def bubbleSort(array) {
 }
 bubbleSort(array)
 println(array)
-
-def list = ["3.6.4-alpine", "3.6.4", "3.6.4-beta"]
-def bubbleSort1(list) {
-  for(i=list.size()-1;i>1;i--){
-   for(j=0;j<i;j++){
-    def VALID_TOKENS = /._/
-    b = list[j].tokenize(VALID_TOKENS)[2]
-    c = list[j+1].tokenize(VALID_TOKENS)[2]
-    if ((list[j][0..2] == list[j+1][0..2] && b > c) || (list[j][0..2] == list[j+1][0..2] && b < c)){
-        list.swap(j,j+1)
-        continue
-    }
-    if(list[j][0..2]>list[j+1][0..2]){
-        list.swap(j,j+1)
-    }
-   }
-  }
-}
-bubbleSort1(list)
-println(list)
