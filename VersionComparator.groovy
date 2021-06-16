@@ -13,6 +13,5 @@ def versionComparator = { a, b, c, d ->
 
   println(a)
   println(b)
-
-
+}
 f.sort(versionComparator)
