@@ -12,16 +12,14 @@ def array = ["3.8.10",
 "3.6.4",
 ]
 
-// for (x in array) {
-//     def VALID_TOKENS = /._/
-//     x1 = x.tokenize(VALID_TOKENS)[2]
-// }
 
 def bubbleSort(array) {
   for(i=array.size()-1;i>1;i--){
    for(j=0;j<i;j++){
-   println(array[j][-1])
-    if(array[j]>array[j+1]){
+    def VALID_TOKENS = /._/
+    b = array[j].tokenize(VALID_TOKENS)[2]
+    c = array[j+1].tokenize(VALID_TOKENS)[2]
+    if(array[j]>=array[j+1] && b > c){
      array.swap(j,j+1)
     }
    }
