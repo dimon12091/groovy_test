@@ -20,3 +20,14 @@ def bubbleSort(array) {
 }
 bubbleSort(array)
 println(array)
+
+
+for (d=0; d < 10; d++) {
+    if (d > 2 && d < 5) {
+        continue
+    }
+    if (d > 7) {
+        break
+    }
+    println(i)
+}
