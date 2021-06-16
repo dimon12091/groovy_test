@@ -8,11 +8,11 @@ def versionComparator = { a, b, c->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
   b = b.tokenize(VALID_TOKENS)
-  c = b.tokenize(VALID_TOKENS)
+  q = b.tokenize(VALID_TOKENS)
   println(a)
   println(b)
 
-  println(c)
+  println(q)
   for (i in 0..<Math.max(a.size(), b.size())) {
     if (i == a.size()) {
       return b[i].isInteger() ? -1 : 1
