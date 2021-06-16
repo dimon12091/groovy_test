@@ -4,15 +4,14 @@ def f = ["1.0.2", "1.2.2.3", "0.1",
 
 println (f)
 @NonCPS
-def versionComparator = { a, b, q ->
+def versionComparator = { a, b ->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
   b = b.tokenize(VALID_TOKENS)
-  q = q.tokenize(VALID_TOKENS)
+
   println(a)
   println(b)
 
-  println(q)
   for (i in 0..<Math.max(a.size(), b.size())) {
     if (i == a.size()) {
       return b[i].isInteger() ? -1 : 1
