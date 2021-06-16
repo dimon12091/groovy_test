@@ -19,6 +19,7 @@ def bubbleSort(array) {
     def VALID_TOKENS = /._/
     b = array[j].tokenize(VALID_TOKENS)[2]
     c = array[j+1].tokenize(VALID_TOKENS)[2]
+    println(String.format("%.2f", array[j]))
     if(array[j]>=array[j+1] && b > c){
      array.swap(j,j+1)
     }
