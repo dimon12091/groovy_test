@@ -4,12 +4,13 @@ def f = ["1.0.12", "1.0.2", "0.1",
 
 println (f)
 @NonCPS
+for x in f {
+    def VALID_TOKENS = /._/
+    x = x.tokenize(VALID_TOKENS)
+}
 def versionComparator = { a, b->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
   b = b.tokenize(VALID_TOKENS)
-
-  println(a)
-  println(b)
 }
 f.sort(versionComparator)
