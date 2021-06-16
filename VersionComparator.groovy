@@ -9,7 +9,6 @@ def bubbleSort(array) {
         println( b)
         println(c)
         array.swap(j,j+1)
-        continue
     }
     if(array[j]>array[j+1]){
         array.swap(j,j+1)
