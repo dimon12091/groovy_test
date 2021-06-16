@@ -24,7 +24,7 @@ def bubbleSort(array) {
   for(i=array.size()-1;i>1;i--){
    for(j=0;j<i;j++){
     if(array[j]>array[j+1]){
-     swap(j,j+1)
+     array.swap(j,j+1)
     }
    }
   }
