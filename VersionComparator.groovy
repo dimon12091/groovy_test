@@ -2,7 +2,7 @@ array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","3.8.3","3.8.2","2.7.2","2.7
 ]
 for(i=array.size()-1;i>1;i--){
     for(j=0;j<i;j++){
-        if (myList[j+1] !== "<none>" ) {
+        if (myList[j+1] != "<none>" ) {
         array.swap(j,j+1)
         }
         b = array[j].tokenize('.')[2]
