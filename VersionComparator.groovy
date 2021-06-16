@@ -14,7 +14,7 @@ def bubbleSort(array) {
     }
    }
   }
-  return array
+  return List array
 }
 bubbleSort(array)
 println(array.array)
