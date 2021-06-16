@@ -8,7 +8,7 @@ array = ["3.8.10","3.9.2","3.9.1","3.8.3","3.8.2","2.7.2","2.7.1","3.8.1","3.7.4
         array.swap(j,j+1)
         continue
     }
-    if(array[j][0..2]>array[j+1][0..2]){
+    if((array[j][0..2]>array[j+1][0..2]) || (array[j+1] == "<none>" )){
         array.swap(j,j+1)
     }
    }
