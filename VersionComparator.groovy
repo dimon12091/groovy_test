@@ -5,13 +5,13 @@ def bubbleSort(array) {
     def VALID_TOKENS = /._/
     b = array[j].tokenize(VALID_TOKENS)[2]
     c = array[j+1].tokenize(VALID_TOKENS)[2]
+    println(array[j])
+    println(array[j+1])
     if(array[j]>array[j+1]){
         array.swap(j,j+1)
         continue
     }
     if (array[j][0..2] == array[j+1][0..2] && b > c) {
-        println( b)
-        println(c)
         array.swap(j,j+1)
     }
 
@@ -20,14 +20,3 @@ def bubbleSort(array) {
 }
 bubbleSort(array)
 println(array)
-
-
-for (d=0; d < 10; d++) {
-    if (d > 2 && d < 5) {
-        continue
-    }
-    if (d > 7) {
-        break
-    }
-    println(d)
-}
