@@ -2,6 +2,8 @@ def f = ["1.0.2", "1.2.2.3", "0.1",
 "0.1.0.2","0.2", "2.0", "0.2.0.4",
 "0.2.0.3.1", "1.5.2_05", "1.5.2_04", "1.5.2_10","1.6.0_01","2.0.0_02", "1.0RC2", "1.0RC1","3.1"]
 
+println (f) instanceof List
+println (f) instanceof String[]
 @NonCPS
 def versionComparator = { a, b ->
   def VALID_TOKENS = /._/
