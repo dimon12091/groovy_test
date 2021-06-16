@@ -1,4 +1,4 @@
-def f = ["3.8.10",
+def array = ["3.8.10",
 "3.9.2",
 "3.9.1",
 "3.8.3",
@@ -19,7 +19,8 @@ for (x in f) {
     println(x1)
 }
 
-def bubbleSort(String[] array) {
+def bubbleSort(array) {
+  println(array.size())
   for(i=array.size()-1;i>1;i--){
    for(j=0;j<i;j++){
     if(array[j]>array[j+1]){
@@ -29,12 +30,6 @@ def bubbleSort(String[] array) {
   }
 }
 
-void swap(String[] array,int one,int two)
-{
- def temp = array[one]
- array[one] = array[two]
- array[two] = temp
-}
 
-bubbleSort(f)
+bubbleSort(array)
 
