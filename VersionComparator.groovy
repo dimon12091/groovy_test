@@ -5,7 +5,7 @@ def bubbleSort(array) {
     def VALID_TOKENS = /._/
     b = array[j].tokenize(VALID_TOKENS)[2]
     c = array[j+1].tokenize(VALID_TOKENS)[2]
-    if ((array[j][0..2] == array[j+1][0..2] && b > c) || (array[j][0..2] == array[j+1][0..2] && b < c)){
+    if ( (array[j].size() > array[j+1].size()) || (array[j][0..2] == array[j+1][0..2] && b > c) || (array[j][0..2] == array[j+1][0..2] && b < c) ){
         array.swap(j,j+1)
         continue
     }
