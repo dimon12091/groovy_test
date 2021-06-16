@@ -22,7 +22,7 @@ def bubbleSort(array) {
     if(array[j][0..2]>array[j+1][0..2]){
         array.swap(j,j+1)
     }
-    if (array[j]=[j+1] && b > c) {
+    if (array[j]=array[j+1] && b > c) {
         array.swap(j,j+1)
     }
    }
