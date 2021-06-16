@@ -4,12 +4,10 @@ def f = ["1.0.12", "1.0.2", "0.1",
 
 println (f)
 @NonCPS
-def versionComparator = { a, b, c, d ->
+def versionComparator = { a, b->
   def VALID_TOKENS = /._/
   a = a.tokenize(VALID_TOKENS)
   b = b.tokenize(VALID_TOKENS)
-  c = c.tokenize(VALID_TOKENS)
-  d = d.tokenize(VALID_TOKENS)
 
   println(a)
   println(b)
