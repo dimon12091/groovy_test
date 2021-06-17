@@ -32,3 +32,4 @@
 
 app = ["1.14.testDocumentExplorer8", "1.14.4"]
 println(app[1].tokenize('.')[2].getClass().getSimpleName())
+println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2])
