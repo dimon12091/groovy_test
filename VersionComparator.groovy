@@ -10,11 +10,11 @@ array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine","<n
                 array.swap(j,j+1)
                 continue
             }
-            if ((array[j][0..3] < array[j+1][0..3]) && (array[j].size() < array[j+1].size() )){
+            if ((array[j][0..2] < array[j+1][0..2]) && (array[j].size() < array[j+1].size() )){
                  array.swap(j,j+1)
                  continue
             }
-            if ((array[j][0..3] == array[j+1][0..3]) && (array[j+1].size() > array[j].size() )){
+            if ((array[j][0..2] == array[j+1][0..2]) && (array[j+1].size() > array[j].size() )){
                  array.swap(j,j+1)
                  continue
             }
@@ -26,3 +26,4 @@ array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine","<n
     }
 println(array)
 println("1.13.tempCheckTaskComplete2"[0..3])
+println("1.13.asdsad.tempCheckTaskComplete2"[0..3])
