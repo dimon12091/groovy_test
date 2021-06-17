@@ -33,4 +33,4 @@
 app = ["1.19.9-fix", "1.19.9-fix2", "1.14.4", "  1.17.1.mocked_rules_assignment"]
 println(app[2].tokenize('.')[4] == null)
 println(app[0].tokenize('.')[2][0])
-println( myList[3].tokenize('.')[3])
+println( app[3].tokenize('.')[3])
