@@ -28,9 +28,10 @@
 // println(array)
 
 nums = null
-if (nums != null) {
+nums1 = ["sadas", "sadasd"]
+if (nums1 !== null) {
     println("asdasdsa")
 }
-if (nums.size() == 0 ){
+if ( nums == null ){
     println("hi")
 }
