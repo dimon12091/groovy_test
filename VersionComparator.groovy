@@ -32,5 +32,5 @@
 
 
 list = [1.14]
-list =  list[0]+ ".0")
+list =  list[0]+ ".0"
 println(list)
