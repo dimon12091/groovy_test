@@ -29,7 +29,7 @@
 
 nums = null
 nums1 = ["sadas", "sadasd"]
-if (nums1 !== null) {
+if (nums1 != null) {
     println("asdasdsa")
 }
 if ( nums == null ){
