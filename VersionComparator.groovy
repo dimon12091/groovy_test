@@ -31,6 +31,5 @@
 // println(array)
 
 
-list = [1.14]
-list =  list[0]+ ".0"
-println(list)
+list = ["3.8.10"]
+println(list[0].size())
