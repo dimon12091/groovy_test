@@ -32,5 +32,5 @@
 
 
 list = ["1.14"]
-list.put(list[0], ".0")
+list.plus(list[0], ".0")
 println(list)
