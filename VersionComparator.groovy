@@ -28,8 +28,9 @@
 // println(array)
 
 nums = null
-println(nums.size())
-println(nums != null && !nums.isEmpty())
+if (nums != null) {
+    println("asdasdsa")
+}
 if (nums.size() == 0 ){
     println("hi")
 }
