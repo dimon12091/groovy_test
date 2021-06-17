@@ -35,3 +35,4 @@ list = ["1.14"]
 if ( list[0].size() == 4) {
     list[0] = list[0] + ".0"
 }
+println(list[0])
