@@ -30,9 +30,5 @@
 //             }
 // println(array)
 
-
-list = ["1.14"]
-if ( list[0].size() == 4) {
-    list[0] = list[0] + ".0"
-}
-println(list[0])
+app = ["1.19.9-fix", "1.19.9-fix2"]
+println(app[0].tokenize('.')[2][0])
