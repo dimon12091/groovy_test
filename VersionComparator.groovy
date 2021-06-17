@@ -31,4 +31,4 @@
 // println(array)
 
 app = ["1.14.testDocumentExplorer8", "1.14.4"]
-typeof(app[0].tokenize('.')[2])
+instanceof(app[0].tokenize('.')[2])
