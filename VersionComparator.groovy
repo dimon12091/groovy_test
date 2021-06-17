@@ -10,7 +10,7 @@ array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine", "1
                 array.swap(j,j+1)
                 continue
             }
-            if ()(array[j][0..3] == array[j+1][0..3]) && (array[j+1].size > array[j].size )){
+            if ((array[j][0..3] == array[j+1][0..3]) && (array[j+1].size > array[j].size )){
                  array.swap(j,j+1)
                  continue
             }
