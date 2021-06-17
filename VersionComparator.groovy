@@ -31,6 +31,6 @@
 // println(array)
 
 
-list = ["1.14"]
-list.add(list[0], ".0")
+list = [1.14]
+list =  list[0]+ ".0")
 println(list)
