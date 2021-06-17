@@ -14,5 +14,6 @@ array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine", "1
                 array.swap(j,j+1)
                 continue
             }
-
+        }
+    }
 println(array)
