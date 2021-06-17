@@ -22,10 +22,10 @@ for(i=array.size()-1;i>1;i--){
                         continue
                     }
 
-                    if((array[j] != "<none>") && (array[j+1] != "<none>") && (array[j][0..2]<array[j+1][0..2]) && (array[j+1].tokenize('.')[2].size() < 3 ) && (array[j].size() < 8 )){
-                        array.swap(j,j+1)
-                        continue
-                    }
+//                     if((array[j] != "<none>") && (array[j+1] != "<none>") && (array[j][0..2]<array[j+1][0..2]) && (array[j+1].tokenize('.')[2].size() < 3 ) && (array[j].size() < 8 )){
+//                         array.swap(j,j+1)
+//                         continue
+//                     }
                 }
             }
 println(array)
