@@ -32,6 +32,6 @@
 
 
 list = ["1.14"]
-if ( list[0].size() = 4) {
+if ( list[0].size() == 4) {
     list[0] = myList[0] + ".0"
 }
