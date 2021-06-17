@@ -1,5 +1,5 @@
-array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine", "1.19.9-fix", "1.19.9-fix2", "1.13.tempCheckTaskComplete2"]
-
+array = ["3.8.10","3.9.2","3.7.dublicate.5","3.9.1","1.17.5","1.17.5-alpine", "1.19.9-fix", "1.19.9-fix2"
+]
     for(i=array.size()-1;i>1;i--){
         for(j=0;j<i;j++){
             if (array[j] == "<none>"){
