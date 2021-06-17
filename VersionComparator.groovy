@@ -27,7 +27,7 @@
 //     }
 // println(array)
 
-nums = []
+nums = null
 println(nums.size())
 println(nums != null && !nums.isEmpty())
 if (nums.size() == 0 ){
