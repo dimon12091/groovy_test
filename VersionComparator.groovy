@@ -32,3 +32,4 @@
 
 app = ["1.19.9-fix", "1.19.9-fix2"]
 println(app[0].tokenize('.')[2][0])
+println(app[0][3][1])
