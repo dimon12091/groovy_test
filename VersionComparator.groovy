@@ -31,4 +31,4 @@
 // println(array)
 
 app = ["1.14.testDocumentExplorer8", "1.14.4"]
-println(app.getClass().getSimpleName())
+println(app[0].getClass().getSimpleName())
