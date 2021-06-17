@@ -28,4 +28,5 @@
 // println(array)
 
 nums = []
-println(nums.size()
+println(nums.size())
+println(nums != null && !nums.isEmpty())
