@@ -48,7 +48,7 @@ for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         if ((test[j][0..2] < test[j+1][0..2]) && (test[j].tokenize('.')[3])) {
             test.swap(j,j+1)
-            continue
+           println(test[j][0..2] < test[j+1][0..2])
         }
     }
 }
