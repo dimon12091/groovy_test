@@ -29,29 +29,17 @@ pipeline {
     }
 }
 
-test = [ "1.19.23","1.18.1-hotfix2","1.19.5", "1.19.testDocumentExplorer8","1.19.1-hotfix", "1.19.22"]
+test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
 println(test[-2].tokenize('.')[2].indexOf('-'))
 println(test.getClass().getSimpleName())
 println(test[3].matches("(?i).*[a-zа-я].*"))
 println(test[0].matches("(?i).*[a-zа-я].*"))
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
-        if (test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*")){
-            test.swap(j,j+1)
-        }
-        if (test[j+1].tokenize('.')[2].matches("(?i).*[a-zа-я].*")){
+        if ((myList[j][0..3] == myList[j+1][0..3]) && (myList[j].tokenize('.')[2].indexOf('-') == 1) && (myList[j+1].tokenize('.')[3] == null)){
+            myList.swap(j,j+1)
             continue
         }
-        if (test[j][0..3] == test[j+1][0..3] && test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*") == false &&  test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger()){
-            test.swap(j,j+1)
-
-        }
-//         if (test[j].tokenize('.')[2].indexOf('-') != 1){
-//             if ((test[j][0..3] <= test[j+1][0..3]) && (test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger())){
-//                 test.swap(j,j+1)
-//             }
-//
-//         }
     }
 }
 println(test)
