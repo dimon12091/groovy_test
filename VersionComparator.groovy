@@ -13,22 +13,6 @@
 // println(app[2].tokenize('.')[2])
 // println(app[2].tokenize('.')[2].indexOf("b"))
 
-
-test = [ "1.19.23","1.18.1-hotfix2","1.19.5", "1.19.testDocumentExplorer8","1.19.1-hotfix", "1.19.22"]
-println(test[-2].tokenize('.')[2].indexOf('-'))
-
-
-for(i=test.size()-1;i>1;i--){
-    for(j=0;j<i;j++){
-        println(test)
-            if (test[j][0..3] == test[j+1][0..3] && test[j].tokenize('.')[2] > test[j+1].tokenize('.')[2]){
-                test.swap(j,j+1)
-            }
-            if ((test[j][0..3] < test[j+1][0..3]) && (test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger())){
-                test.swap(j,j+1)
-            }
-    }
-}
 println(test)
 
 pipeline {
@@ -42,6 +26,21 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!'
+            }
+        }
+    }
+}
+
+test = [ "1.19.23","1.18.1-hotfix2","1.19.5", "1.19.testDocumentExplorer8","1.19.1-hotfix", "1.19.22"]
+println(test[-2].tokenize('.')[2].indexOf('-'))
+
+
+for(i=test.size()-1;i>1;i--){
+    for(j=0;j<i;j++){
+        println(test)
+        if ((test[j].tokenize('.')[2].indexOf('-') != 1) && (test[j+1].tokenize('.')[2].indexOf('-') != 1))
+            if ((test[j][0..3] <= test[j+1][0..3]) && (test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger())){
+                test.swap(j,j+1)
             }
         }
     }
