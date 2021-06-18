@@ -30,10 +30,19 @@ for(i=test.size()-1;i>1;i--){
     }
 }
 println(test)
+
 pipeline {
     agent {label 'master'}
 
     options {
       buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!'
+            }
+        }
     }
 }
