@@ -14,14 +14,10 @@
 // println(app[2].tokenize('.')[2].indexOf("b"))
 
 
-test = [ "1.19.8", "1.18.8", "1.18.9", "1.19.23", "1.14.testDocumentExplorer8"]
-println(test[-1].tokenize('.')[2].getClass().getSimpleName())
-println(test[-1].tokenize('.')[1].getClass().getSimpleName())
-println(test[-1].tokenize('.')[2] > test[-2].tokenize('.')[2])
-println(test[-2].tokenize('.')[2].toInteger())
-println(test[-2][0..3])
-println(test[-2][0..3] < test[-1][0..3])
-println(test[-2].tokenize('.')[2] > test[-1].tokenize('.')[2])
+test = [ "1.19.8", "1.18.8", "1.18.9", "1.19.23", "1.14.testDocumentExplorer8", "1.19.1-hotfix"]
+println(test[-1].tokenize('.'[2].indexOf('-')
+println(test[-2].tokenize('.'[2].indexOf('-')
+
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         println(test)
@@ -34,3 +30,9 @@ for(i=test.size()-1;i>1;i--){
     }
 }
 println(test)
+pipeline {
+    agent {label 'master'}
+
+    options {
+      buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
