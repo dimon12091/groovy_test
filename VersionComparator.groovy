@@ -46,9 +46,10 @@ println(app[2].tokenize('.')[2].indexOf("b"))
 test = ["1.17.1.mocked_rules_assignment", "1.19.8", "1.18.8", "1.18.9", "1.16.3.estate-for-web", "1.16.9"]
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
-        if ((test[j][0..2] < test[j+1][0..2]) && (test[j].tokenize('.')[3])) {
+        if ((test[j][0..2] < test[j+1][0..2]) && (test[j].tokenize('.')[3]) != null) {
             test.swap(j,j+1)
-           println(test[j][0..2] < test[j+1][0..2])
+            println(test[j].tokenize('.')[3]))
+            println(test[j][0..2] < test[j+1][0..2])
         }
     }
 }
