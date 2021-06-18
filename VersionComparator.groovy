@@ -14,7 +14,7 @@
 // println(app[2].tokenize('.')[2].indexOf("b"))
 
 
-test = [, "1.19.8", "1.18.8", "1.18.9", "1.19.23"]
+test = [ "1.19.8", "1.18.8", "1.18.9", "1.19.23"]
 println(test[-1].tokenize('.')[2])
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
