@@ -34,7 +34,7 @@ pipeline {
 test = [ "1.19.23","1.18.1-hotfix2","1.19.5", "1.19.testDocumentExplorer8","1.19.1-hotfix", "1.19.22"]
 println(test[-2].tokenize('.')[2].indexOf('-'))
 
-
+test.matches("(?i).*[a-zа-я].*")
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         println(test)
