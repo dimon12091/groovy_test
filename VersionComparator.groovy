@@ -28,25 +28,25 @@ pipeline {
         }
     }
 }
-
-test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.10-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
-println(test[2].tokenize('.')[2].split(-))
-println(test[3].tokenize('.')[2].split(-))
-println(test[0].matches("(?i).*[a-zа-я].*"))
-for(i=test.size()-1;i>1;i--){
-    for(j=0;j<i;j++){
-        if (test[j][0..3] == test[j+1][0..3] && test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*") == false &&  test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger()){
-            test.swap(j,j+1)
-            continue
-
-        }
-        if ((test[j][0..3] == test[j+1][0..3]) && (test[j].tokenize('.')[2].indexOf('-') == 1) && (test[j+1].tokenize('.')[3] == null)){
-            if (test[j].tokenize('.')[2] < test[j+1].tokenize('.')[2]  ){
-                test.swap(j,j+1)
-                continue
-            }
-        }
-
-    }
-}
-println(test)
+app = "9-fix2"
+app.split("-")
+// test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.10-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
+// println(test[3].tokenize('.')[2].split("-"))
+// println(test[0].matches("(?i).*[a-zа-я].*"))
+// for(i=test.size()-1;i>1;i--){
+//     for(j=0;j<i;j++){
+//         if (test[j][0..3] == test[j+1][0..3] && test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*") == false &&  test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger()){
+//             test.swap(j,j+1)
+//             continue
+//
+//         }
+//         if ((test[j][0..3] == test[j+1][0..3]) && (test[j].tokenize('.')[2].indexOf('-') == 1) && (test[j+1].tokenize('.')[3] == null)){
+//             if (test[j].tokenize('.')[2] < test[j+1].tokenize('.')[2]  ){
+//                 test.swap(j,j+1)
+//                 continue
+//             }
+//         }
+//
+//     }
+// }
+// println(test)
