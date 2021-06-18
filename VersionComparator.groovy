@@ -30,7 +30,12 @@
 //             }
 // println(array)
 
-app = ["1.14.testDocumentExplorer8", "1.14.4", "1.14.4-alpine"]
+app = ["1.14.testDocumentExplorer8", "1.14.4", "1.14.4-alpine", "1.14.estate-for-web,"]
+if (((app[0][0..2] >= app[1][0..2] ) || (app[0][0..2] <= app[1][0..2] ))  && (app[0].tokenize('.')[2] >  app[1].tokenize('.')[2])) {
+    app.swap(0,1)
+
+}
+println(app)
 println(app[1].tokenize('.')[2].getClass().getSimpleName())
 println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2]) // false
 println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2]) // true
