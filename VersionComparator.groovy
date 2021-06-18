@@ -41,6 +41,10 @@ for(i=test.size()-1;i>1;i--){
                 test.swap(j,j+1)
             }
         }
+         if (test[j][0..3] == test[j+1][0..3] && test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*") == false &&  test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger()){
+            test.swap(j,j+1)
+            continue
+         }
     }
 }
 println(test)
