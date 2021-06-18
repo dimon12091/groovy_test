@@ -30,7 +30,11 @@
 //             }
 // println(array)
 
-app = ["1.14.testDocumentExplorer8", "1.14.4"]
+app = ["1.14.testDocumentExplorer8", "1.14.4", "1.14.4-alpine"]
 println(app[1].tokenize('.')[2].getClass().getSimpleName())
-println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2])
-println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2])
+println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2]) // false
+println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2]) // true
+println(app[2].tokenize('.')[2])
+println(app[2].tokenize('.')[2].indexOf("-"))
+
+
