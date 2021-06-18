@@ -2,39 +2,11 @@
 // for(i=array.size()-1;i>1;i--){
 //                 for(j=0;j<i;j++){
 //
-//                     if (array[j] == "<none>"){
-//                         array.swap(j,j+1)
-//                         continue
-//                     }
 //
-//                     if ( (array[j] != "<none>") && (array[j+1] != "<none>") && (array[j].tokenize('.')[2].size() > 2) ) {
-//                         array.swap(j,j+1)
-//                         continue
-//                     }
 //
-//                     if ((array[j] != "<none>") && (array[j+1] != "<none>") && (array[j][0..3] < array[j+1][0..3]) && (array[j].size() < array[j+1].size() )){
-//                         array.swap(j,j+1)
-//                         continue
-//                     }
-//
-//                     if ((array[j][0..3] == array[j+1][0..3]) && (array[j].size() < array[j+1].size() )){
-//                         array.swap(j,j+1)
-//                         continue
-//                     }
-//
-//                     if((array[j] != "<none>") && (array[j+1] != "<none>") && (array[j][0..2]<array[j+1][0..2]) && (array[j+1].tokenize('.')[2].size() < 3 ) && (array[j].size() < 8 )){
-//                         array.swap(j,j+1)
-//                         continue
-//                     }
 //                 }
 //             }
 // println(array)
-
-app = ["1.14.testDocumentExplorer8", "1.14.4", "1.14.4-alpine", "1.14.estate-for-web,"]
-if (((app[0][0..2] >= app[1][0..2] ) || (app[0][0..2] <= app[1][0..2] ))  && (app[0].tokenize('.')[2] >  app[1].tokenize('.')[2])) {
-    app.swap(0,1)
-
-}
 // println(app[1].tokenize('.')[2].getClass().getSimpleName())
 // println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2]) // false
 // println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2]) // true
@@ -49,9 +21,9 @@ for(i=test.size()-1;i>1;i--){
 //             if ((test[j][0..3] < test[j+1][0..3]) && (test[j].tokenize('.')[3]) != null) {
 //                 test.swap(j,j+1)
 //             }
-                if (myList[j][0..3] == true){
-                    if (((myList[j][0..3] >= myList[j+1][0..3] ) || (myList[j][0..3] <= myList[j+1][0..3] ))  && (myList[j].tokenize('.')[2] >  myList[j+1].tokenize('.')[2]) && (myList[j+1] != "<none>")) {
-                        myList.swap(j,j+1)
+                if (test[j][0..3] == true){
+                    if (((test[j][0..3] >= test[j+1][0..3] ) || (test[j][0..3] <= test[j+1][0..3] ))  && (test[j].tokenize('.')[2] >  test[j+1].tokenize('.')[2]) && (test[j+1] != "<none>")) {
+                        test.swap(j,j+1)
                         continue
                     }
                 }
