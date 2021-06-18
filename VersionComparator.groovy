@@ -16,7 +16,9 @@
 
 test = [ "1.19.8", "1.18.8", "1.18.9", "1.19.23"]
 println(test[-1].tokenize('.')[2] > test[-2].tokenize('.')[2])
-println(test[0][0..3])
+println(test[-2][0..3])
+println(test[-2][0..3] < test[-1][0..3])
+println(test[-2].tokenize('.')[2] > test[-1].tokenize('.')[2])
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         if (test[j][0..3] == true && test[j+1][0..3] == true ){
