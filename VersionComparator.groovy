@@ -35,12 +35,11 @@ if (((app[0][0..2] >= app[1][0..2] ) || (app[0][0..2] <= app[1][0..2] ))  && (ap
     app.swap(0,1)
 
 }
-println(app)
-println(app[1].tokenize('.')[2].getClass().getSimpleName())
-println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2]) // false
-println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2]) // true
-println(app[2].tokenize('.')[2])
-println(app[2].tokenize('.')[2].indexOf("b"))
+// println(app[1].tokenize('.')[2].getClass().getSimpleName())
+// println(app[1].tokenize('.')[2] > app[0].tokenize('.')[2]) // false
+// println(app[1].tokenize('.')[2] < app[0].tokenize('.')[2]) // true
+// println(app[2].tokenize('.')[2])
+// println(app[2].tokenize('.')[2].indexOf("b"))
 
 
 test = ["1.17.1.mocked_rules_assignment", "1.19.8", "1.18.8", "1.18.9", "1.16.3.estate-for-web", "1.16.9"]
