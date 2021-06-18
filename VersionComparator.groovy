@@ -21,12 +21,12 @@ println(test[-2][0..3] < test[-1][0..3])
 println(test[-2].tokenize('.')[2] > test[-1].tokenize('.')[2])
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
+        println(test)
             if ((test[j][0..3] == test[j+1][0..3]) && (test[j].tokenize('.')[2] > test[j+1].tokenize('.')[2])){
                 test.swap(j,j+1)
             }
             if ((test[j][0..3] < test[j+1][0..3]) && (test[j].tokenize('.')[2] > test[j+1].tokenize('.')[2])){
                 test.swap(j,j+1)
-                continue
             }
     }
 }
