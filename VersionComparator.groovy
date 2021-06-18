@@ -15,7 +15,7 @@
 
 
 test = ["1.17.1.mocked_rules_assignment", "1.19.8", "1.18.8", "1.18.9", "1.16.3.estate-for-web", "1.16.9", "1.4"]
-println(test[-1].tokenize('.'[2])
+println(test[-1].tokenize('.')[2])
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         if(test[j][0..3] == true){
