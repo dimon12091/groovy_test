@@ -15,8 +15,8 @@
 
 
 test = [ "1.19.8", "1.18.8", "1.18.9", "1.19.23", "1.14.testDocumentExplorer8", "1.19.1-hotfix"]
-println(test[-1].tokenize('.'[2].indexOf('-')
-println(test[-2].tokenize('.'[2].indexOf('-')
+println(test[-1].tokenize('.'[2].indexOf('-'))
+println(test[-2].tokenize('.'[2].indexOf('-'))
 
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
