@@ -30,9 +30,7 @@ pipeline {
 }
 
 test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
-println(test[-2].tokenize('.')[2].indexOf('-'))
-println(test.getClass().getSimpleName())
-println(test[3].matches("(?i).*[a-zа-я].*"))
+println(test[2].tokenize('.')[2][1])
 println(test[0].matches("(?i).*[a-zа-я].*"))
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
