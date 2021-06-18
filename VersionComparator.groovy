@@ -36,8 +36,8 @@ println(test[3].matches("(?i).*[a-zа-я].*"))
 println(test[0].matches("(?i).*[a-zа-я].*"))
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
-        if ((myList[j][0..3] == myList[j+1][0..3]) && (myList[j].tokenize('.')[2].indexOf('-') == 1) && (myList[j+1].tokenize('.')[3] == null)){
-            myList.swap(j,j+1)
+        if ((test[j][0..3] == test[j+1][0..3]) && (test[j].tokenize('.')[2].indexOf('-') == 1) && (test[j+1].tokenize('.')[3] == null)){
+            test.swap(j,j+1)
             continue
         }
     }
