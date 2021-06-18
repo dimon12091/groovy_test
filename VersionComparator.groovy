@@ -36,11 +36,12 @@ println(test[3].matches("(?i).*[a-zа-я].*"))
 println(test[0].matches("(?i).*[a-zа-я].*"))
 for(i=test.size()-1;i>1;i--){
     for(j=0;j<i;j++){
-        println(test)
-        if ((test[j].tokenize('.')[2].indexOf('-') != 1) && (test[j+1].tokenize('.')[2].indexOf('-') != 1) && (test[j+1].tokenize('.')[2].matches("(?i).*[a-zа-я].*")) && (test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*"))){
+
+        if ((test[j].tokenize('.')[2].indexOf('-') != 1) && (test[j+1].tokenize('.')[2].indexOf('-') != 1) && (test[j].tokenize('.')[2].matches("(?i).*[a-zа-я].*"))){
             if ((test[j][0..3] <= test[j+1][0..3]) && (test[j].tokenize('.')[2].toInteger() < test[j+1].tokenize('.')[2].toInteger())){
                 test.swap(j,j+1)
             }
         }
     }
 }
+println(test)
