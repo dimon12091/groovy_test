@@ -20,7 +20,7 @@ for ( x in app) {
     if (x.tokenize(".")[2].equals(null) == true) {
         println('hi')
     }
-    if (x.tokenize(".")[2].equals(null)  == null) {
+    if (x.tokenize(".")[2].equals(null)  == false) {
         println('hi1')
     }
 }
