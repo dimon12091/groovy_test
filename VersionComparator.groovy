@@ -28,10 +28,16 @@ pipeline {
         }
     }
 }
-app = ["9-fix2", "10-fix2"]
-println(app[0].split('-')[0])
-println(app[1].split('-')[0])
-println(app[1].split('-')[0].toInteger() > app[0].split('-')[0].toInteger())
+app = ["1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
+for(i=app.size()-1;i>1;i--){
+    for(j=0;j<i;j++){
+        if (app[j].tokenize('.')[2].indexOf("-") == 1) {
+            if ((app[j][0..3] == app[j+1][0..3]) && (app[j].split('-')[0].toInteger() <  app[j+1].tokenize('.')[2].toInteger())) {
+                app.swap(j,j+1)
+            }
+        }
+    }
+}
 // test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.10-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
 // println(test[3].tokenize('.')[2].split("-"))
 // println(test[0].matches("(?i).*[a-zа-я].*"))
