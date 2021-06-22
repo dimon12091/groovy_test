@@ -32,16 +32,16 @@ app = ["1.20.1", "1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "
 println(app[1].tokenize(".")[2].split("-")[0])
 println(app[2].tokenize(".")[2].split("-")[0])
 println(app[2].tokenize(".")[2].indexOf("-") == 1)
-println('h2')
-for(i=app.size()-1;i>1;i--){
-    for(j=0;j<i;j++){
-        if (app[j].tokenize('.')[2].indexOf("-") == 1) {
-            if ((app[j][0..3] == app[j+1][0..3]) && (app[j].tokenize(".")[2].split("-")[0].toInteger() <  app[j+1].tokenize(".")[2].split("-")[0].toInteger())) {
-                app.swap(j,j+1)
-            }
-        }
-    }
-}
+println(myList[0].tokenize('.')[2].indexOf("-") != 1)
+// for(i=app.size()-1;i>1;i--){
+//     for(j=0;j<i;j++){
+//         if (app[j].tokenize('.')[2].indexOf("-") == 1) {
+//             if ((app[j][0..3] == app[j+1][0..3]) && (app[j].tokenize(".")[2].split("-")[0].toInteger() <  app[j+1].tokenize(".")[2].split("-")[0].toInteger())) {
+//                 app.swap(j,j+1)
+//             }
+//         }
+//     }
+// }
 println(app)
 // test = [ "1.20.2", "1.20.1", "1.19.9-fix2", "1.19.10-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
 // println(test[3].tokenize('.')[2].split("-"))
