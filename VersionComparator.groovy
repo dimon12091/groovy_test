@@ -32,7 +32,7 @@ app = ["1.20.1", "1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "
 println(app[1].tokenize(".")[2].split("-")[0])
 println(app[1].tokenize(".")[2].indexOf("-") == 1)
 println(app[1].tokenize(".")[2].split("-")[0].toInteger())
-println(myList[1].tokenize('.')[2].matches("(?i).*[a-zа-я].*"))
+println(app[1].tokenize('.')[2].matches("(?i).*[a-zа-я].*"))
 // for(i=app.size()-1;i>1;i--){
 //     for(j=0;j<i;j++){
 //         if (app[j].tokenize('.')[2].indexOf("-") == 1) {
