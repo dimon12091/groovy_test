@@ -31,7 +31,6 @@ pipeline {
 app = ["1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
 println(app[1].split('-')[0].toInteger())
 println(app[2].split('-')[0].toInteger())
-println(app[-1].split('-')[0].toInteger())
 // for(i=app.size()-1;i>1;i--){
 //     for(j=0;j<i;j++){
 //         if (app[j].tokenize('.')[2].indexOf("-") == 1) {
