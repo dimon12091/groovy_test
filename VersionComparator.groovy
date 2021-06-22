@@ -29,7 +29,7 @@ pipeline {
     }
 }
 app = ["1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
-println('h1')
+println(app[1].split("-")[0])
 println(app[1].split("-")[0].toInteger())
 println('h2')
 println(app[2].split("-")[0].toInteger())
