@@ -17,10 +17,10 @@ pipeline {
 app = ["1.9", "1.20.1", "1.19.9-fix2", "1.19.9-fix", "1.19.20", "1.19.11", "1.19.10", "1.19.9"]
 for ( x in app) {
 
-    if (app[x].tokenize(".")[2] == null) {
+    if (x.tokenize(".")[2] == true) {
         println('hi')
     }
-    if (app[x].tokenize(".")[2] == true) {
+    if (x.tokenize(".")[2] == false) {
         println('hi')
     }
 }
