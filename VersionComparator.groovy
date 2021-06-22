@@ -35,7 +35,7 @@ println('h2')
 for(i=app.size()-1;i>1;i--){
     for(j=0;j<i;j++){
         if (app[j].tokenize('.')[2].indexOf("-") == 1) {
-            if ((app[j][0..3] == app[j+1][0..3]) && (app[j].tokenize(".")[2].split("-")[0].toInteger() <  app[j+1].tokenize('.')[2].toInteger())) {
+            if ((app[j][0..3] == app[j+1][0..3]) && (app[j].tokenize(".")[2].split("-")[0].toInteger() <  app[j+1].tokenize(".")[2].split("-")[0].toInteger())) {
                 app.swap(j,j+1)
             }
         }
