@@ -28,3 +28,5 @@ for ( x in app) {
 
 test = ["1.9", "1.20.1"]
 println(test.size())
+println(app[2].tokenize(".")[1] == myList[3].tokenize(".")[1])
+println(app[2].tokenize(".")[2] == myList[3].tokenize(".")[2])
