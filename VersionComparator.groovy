@@ -26,4 +26,5 @@ for ( x in app) {
 }
 
 
-
+test = ["1.9", "1.20.1"]
+println(test.size())
