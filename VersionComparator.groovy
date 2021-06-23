@@ -28,4 +28,5 @@ pipeline {
 
 test = []
 test.add("1.19")
+test.add("1.15")
 println(test)
