@@ -53,5 +53,6 @@ for(i=myList.size()-1;i>1;i--){
                      continue
                 }
             }
+     println(myList)
 }
 
