@@ -84,7 +84,7 @@ control_tag = "0.0.0"
                     continue
                 }
 
-                if ( tag > tag.tokenize(".")[0] + '.' + myList[0].tokenize(".")[1] && tag < head_tag ) {
+                if ( tag > tag[0..3] && tag < head_tag ) {
                     control_tag = tag
 
                     var = var + 1
