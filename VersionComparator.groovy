@@ -62,9 +62,9 @@ for(i=myList.size()-1;i>1;i--){
 }
 println(myList)
 head_tag = myList[0]
-    rmList = []
-    var = 0
-    control_tag = "0.0.0"
+rmList = []
+var = 0
+control_tag = "0.0.0"
     if (head_tag != "" ) {
         for (tag in myList) {
             if (tag != "<none>") {
@@ -90,6 +90,7 @@ head_tag = myList[0]
                     var = var + 1
                 }
             }
+        println(rmList)
         }
     }
-println(rmList)
+
