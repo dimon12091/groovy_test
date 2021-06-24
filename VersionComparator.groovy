@@ -59,7 +59,69 @@ for(i=myList.size()-1;i>1;i--){
                      continue
                 }
             }
+    head_tag = myList[0]
+    rmList = []
+    var = 0
+    control_tag = "0.0.0"
+    if (head_tag != "" ) {
+        for (tag in myList) {
+            if (tag != "<none>") {
+                if (tag.tokenize(".")[2].equals(null) == true){
+                    tag = tag + ".0"
+                }
+                if (tag.tokenize(".")[0] == head_tag.tokenize(".")[0] && tag.tokenize(".")[1] == head_tag.tokenize(".")[1]) {
+                    continue
+                }
+                if (var > 2 ) {
+                    rmList.add(tag)
+                    continue
+                }
 
+                if ( (tag.tokenize(".")[0] == head_tag.tokenize(".")[0] && tag.tokenize(".")[1] == head_tag.tokenize(".")[1]) && (tag.tokenize(".")[2].split("-")[0].toInteger() <= control_tag.tokenize(".")[2].split("-")[0].toInteger()) ) {
+                    rmList.add(tag)
+                    continue
+                }
+
+                if ( tag > tag.tokenize(".")[0] + '.' + myList[0].tokenize(".")[1]) && tag < head_tag ) {
+                    control_tag = tag
+
+                    var = var + 1
+                }
+            }
+        }
+    }
 }
 println(myList)
 
+head_tag = myList[0]
+rmList = []
+var = 0
+control_tag = "0.0.0"
+    if (head_tag != "" ) {
+        for (tag in myList) {
+            if (tag != "<none>") {
+                if (tag.tokenize(".")[2].equals(null) == true){
+                    tag = tag + ".0"
+                }
+                if (tag.tokenize(".")[0] == head_tag.tokenize(".")[0] && tag.tokenize(".")[1] == head_tag.tokenize(".")[1]) {
+                    continue
+                }
+                if (var > 2 ) {
+                    rmList.add(tag)
+                    continue
+                }
+
+                if ( (tag.tokenize(".")[0] == head_tag.tokenize(".")[0] && tag.tokenize(".")[1] == head_tag.tokenize(".")[1]) && (tag.tokenize(".")[2].split("-")[0].toInteger() <= control_tag.tokenize(".")[2].split("-")[0].toInteger()) ) {
+                    rmList.add(tag)
+                    continue
+                }
+
+                if ( tag > tag.tokenize(".")[0] + '.' + myList[0].tokenize(".")[1]) && tag < head_tag ) {
+                    control_tag = tag
+
+                    var = var + 1
+                }
+            }
+        }
+    }
+println(rmList)
