@@ -50,7 +50,7 @@ for(i=myList.size()-1;i>1;i--){
                     continue
                 }
 
-                if ((myList[j].tokenize(".")[0] > myList[j+1].tokenize(".")[0] ){
+                if (myList[j].tokenize(".")[0] > myList[j+1].tokenize(".")[0] ){
                     myList.swap(j,j+1)
                     continue
                 }
